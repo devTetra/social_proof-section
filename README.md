@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./laptop.png)
+![](./laptop1.png)
 
 ### Links
 
