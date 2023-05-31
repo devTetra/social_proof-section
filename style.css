@@ -1,0 +1,214 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background: url(./images/bg-pattern-top-desktop.svg),url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: left top,right bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+}
+
+main
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.writeup,
+.reviews
+{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.article, .rates
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+}
+
+.article h1
+{
+    color: hsl(300, 43%, 22%);
+    font-size: 70px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.article p
+{
+    width: 60%;
+    color: #937b92;
+}
+
+.rate
+{
+    width: 400px;
+    height: 50px;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.rate p
+{
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    padding-left: 10px;
+}
+
+.rates #report
+{
+    margin-left: 60px;
+}
+
+.rates #tech
+{
+    margin-left: 120px;
+}
+
+.review
+{
+    width: 270px;
+    height: 200px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 30px;
+    color: hsl(300, 24%, 96%);
+}
+
+.reviews #irene
+{
+    margin-top: 30px;
+}
+
+.reviews #anne
+{
+    margin-top: 60px;
+}
+
+.top
+{
+   display: flex;
+    padding-bottom: 10px;
+    align-items: center ;
+}
+
+.top .profile
+{
+    padding-right: 20px;    
+}
+
+.top .profile img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.top .info #about
+{
+    color: hsl(333, 80%, 67%);
+}
+
+.attribution 
+{
+    font-size: 11px;
+    text-align: center;
+}
+
+  .attribution a 
+{
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:320px) and (max-width:480px)  
+{
+    body
+    {
+        background: url(./images/bg-pattern-top-mobile.svg),url(./images/bg-pattern-bottom-mobile.svg);
+        background-position: left top,right bottom;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    main
+    {
+        width: 90%;
+        height: 100%;
+    } 
+
+    .writeup, .reviews
+    {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .article
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    .article h1
+    {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .article p
+    {
+        width: 100%;
+        padding: 10px
+    }
+
+    .rates
+    {
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .rates #review,.rates #report, .rates #tech
+    {
+        width: 90vw;
+        height: 70px;
+        margin: 10px 0px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .reviews #colton, .reviews #irene, .reviews #anne
+    {
+        width: 90vw;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
